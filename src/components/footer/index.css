@@ -1,0 +1,12 @@
+.footer__hero {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 588px;
+    width: 100%;
+    position: absolute;
+    margin-left: -10%;
+    margin-right: -10%;
+    z-index: -1;
+    transform: translateY(-580px);
+}
