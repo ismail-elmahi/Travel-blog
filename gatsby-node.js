@@ -107,7 +107,7 @@ const path = require(`path`);
         Array.from({length :  numPages}).forEach((_, i ) => {
             createPage({
                 path: i === 0 ? `/category/travel` : `/category/travel/${i + 1}`,
-                component: path.resolve("./src/templates/travel.js"),
+                component: path.resolve("./src/templates/Travel.js"),
                 context: {
                     limit:blogsPerPage,
                     skip: i * blogsPerPage,
