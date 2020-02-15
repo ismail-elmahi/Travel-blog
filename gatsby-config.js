@@ -1,30 +1,28 @@
-require('dotenv').config({
-  path:`.env.${process.env.NODE_ENV}`,
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Travel blog `,
+    description: `This site web for who love travel `,
+    author: `Ismail El mahi`,
+   
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
-      resolve:`gatsby-source-contentful`,
-      options:{
-        spaceId:`iuva006cgexz`,
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `iuva006cgexz`,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
-      options:{
-        fonts: [
-          'baskervill\:400',
-          'muli\:300,700'
-        ]
+      options: {
+        fonts: ["baskervill:400", "muli:300,700"],
       },
     },
     {
@@ -45,7 +43,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon-logo.png`, // This path is relative to the root of the site.
+        
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -7,7 +7,7 @@ const NotFond = () => {
     <Layout>
       <div className="contact__header"></div>
       <div className="contact__thanks">
-        <h1>This Page Not Found .</h1>
+        <h1>This Page Not Found.</h1>
         <button className="btn__med" onClick={() => navigate("/")}>
           Back to home
         </button>
